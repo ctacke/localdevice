@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNETCF.LocalDevice.FFx", "OpenNETCF.LocalDevice.FFx.csproj", "{B64ADC0F-1F77-4A32-A995-5DDD7AF93156}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNETCF.LocalDevice.Mono", "OpenNETCF.LocalDevice.Mono.csproj", "{82DFA1D1-CE19-4CCA-9BF9-EDBE0B791925}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenNETCF.LocalDevice.Android", "OpenNETCF.LocalDevice.Android.csproj", "{AB362761-9CF4-4E0E-B1AB-D0B9CBD8027B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B64ADC0F-1F77-4A32-A995-5DDD7AF93156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B64ADC0F-1F77-4A32-A995-5DDD7AF93156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B64ADC0F-1F77-4A32-A995-5DDD7AF93156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B64ADC0F-1F77-4A32-A995-5DDD7AF93156}.Release|Any CPU.Build.0 = Release|Any CPU
+		{82DFA1D1-CE19-4CCA-9BF9-EDBE0B791925}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82DFA1D1-CE19-4CCA-9BF9-EDBE0B791925}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82DFA1D1-CE19-4CCA-9BF9-EDBE0B791925}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82DFA1D1-CE19-4CCA-9BF9-EDBE0B791925}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB362761-9CF4-4E0E-B1AB-D0B9CBD8027B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB362761-9CF4-4E0E-B1AB-D0B9CBD8027B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB362761-9CF4-4E0E-B1AB-D0B9CBD8027B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB362761-9CF4-4E0E-B1AB-D0B9CBD8027B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
