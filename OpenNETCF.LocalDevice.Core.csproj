@@ -1,0 +1,57 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <AssemblyName>OpenNETCF.LocalDevice</AssemblyName>
+    <RootNamespace>OpenNETCF.LocalDevice</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;CORE</DefineConstants>
+    <OutputPath>..\bin\Core\Release\</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>DEBUG;TRACE;CORE</DefineConstants>
+    <OutputPath>..\bin\Core\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OpenNETCF.LocalDevice.Android\**" />
+    <Compile Remove="packages\**" />
+    <Compile Remove="References\**" />
+    <Compile Remove="Resources\**" />
+    <EmbeddedResource Remove="OpenNETCF.LocalDevice.Android\**" />
+    <EmbeddedResource Remove="packages\**" />
+    <EmbeddedResource Remove="References\**" />
+    <EmbeddedResource Remove="Resources\**" />
+    <None Remove="OpenNETCF.LocalDevice.Android\**" />
+    <None Remove="packages\**" />
+    <None Remove="References\**" />
+    <None Remove="Resources\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="LocalDevice_Android.cs" />
+    <Compile Remove="LocalDevice_CE.cs" />
+    <Compile Remove="LocalDevice_Desktop.cs" />
+    <Compile Remove="LocalDevice_Mono.cs" />
+    <Compile Remove="LocalDevice_Phone.cs" />
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="packages.OpenNETCF.LocalDevice.Android.config" />
+    <None Remove="packages.OpenNETCF.LocalDevice.FFx.config" />
+    <None Remove="packages.OpenNETCF.LocalDevice.Mono.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Diagnostics.PerformanceCounter" Version="4.6.0" />
+  </ItemGroup>
+
+</Project>
