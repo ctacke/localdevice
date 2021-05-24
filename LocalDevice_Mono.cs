@@ -7,6 +7,7 @@ using System.Net;
 using System.Net.NetworkInformation;
 using System.Diagnostics;
 using System.IO;
+using System.Threading;
 
 #if MONO
 using Mono.Unix.Native;
@@ -31,7 +32,16 @@ namespace System
 
             public void SetLocalTime(DateTime time)
             {
-                throw new NotSupportedException();
+                var timeString = time.ToString("yyyy-MM-dd HH:mm");
+                Console.WriteLine($"SYSTEM: Setting Date to {timeString}");
+                var timeProcess = Process.Start("sudo", $"date -s '{timeString}'");
+                while (timeProcess != null && !timeProcess.HasExited)
+                {
+                    Console.WriteLine($"SYSTEM: Waiting on Setting Date...");
+                    Thread.Sleep(1000);
+                }
+                Console.WriteLine($"SYSTEM: Writing Date to Hardware Clock");
+                Process.Start("sudo", $"hwclock -w");
             }
 
             public void SetSystemTime(DateTime time)
